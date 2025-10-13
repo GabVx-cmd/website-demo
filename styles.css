@@ -47,6 +47,7 @@
     top: -10px;
     left: -10px;
     padding-right: 5px;
+    animation: fadeIn 1s;
 }
 
 .nav-container p{
@@ -85,6 +86,7 @@
     width: 100%;
     margin: 100px auto 20px auto;
     height: 30vh;
+    animation: fadeIn 2s;
 }
 
 .header-container header{
@@ -130,6 +132,7 @@
     justify-content: center;
     align-items: center;
     margin: 20px auto 50px auto ;
+    animation: fadeIn 3s;
 }
 
 .overlay section{
@@ -155,6 +158,7 @@
     font-size: 1.2rem;
     font-style: oblique;
     margin-top: 10px;
+    animation: fadeIn 4s;
 }
 
 #menu-header{
@@ -162,6 +166,7 @@
     margin: 10px auto 20px auto;
     font-size: clamp(1.2rem, 10vw, 3rem);
     font-weight: bolder;
+    animation: fadeIn 2s;
 }
 
 .parent-container{
@@ -172,6 +177,7 @@
     justify-content: center;
     max-width: 80%;
     margin: -20px auto 50px auto;
+    animation: fadeIn 3s;
 }
 
 .child-container{
@@ -218,36 +224,6 @@
     padding-left: 20px;
 }
 
-/* Hover effect for menu cards */
-.child-container:hover{
-    transform: translateY(-6px);
-    box-shadow: 4px 8px 24px rgba(0,0,0,0.5);
-}
-
-.child-container img:hover{
-    transform: scale(1.03);
-    filter: saturate(1.05);
-}
-
-/* Form button transition */
-form button, .form button{
-    background-color: wheat;
-    color: black;
-    font-weight: bolder;
-    cursor: pointer;
-    width: 30%;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: none;
-    transition: background-color 180ms ease, transform 160ms ease, box-shadow 160ms ease;
-}
-
-form button:hover, .form button:hover{
-    background-color: #fff0c6;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
-}
-
 #about-header{
     text-align: center;
     margin: 0px auto 20px auto;
@@ -255,6 +231,7 @@ form button:hover, .form button:hover{
     font-weight: bolder;
     position: relative;
     top: -20px;
+    animation: fadeIn 3s;
 }
 
 .about-wrapper{
@@ -266,7 +243,9 @@ form button:hover, .form button:hover{
     border-radius: 20px;
     position: relative;
     top: -20px;
+    animation: fadeIn 3s;
 }
+
 
 .txt-about{
     font-size: clamp(1rem, 3vw, 1.2rem);
@@ -275,10 +254,28 @@ form button:hover, .form button:hover{
     margin: 5px auto;
 }
 
+#contact-header{
+    text-align: center;
+    margin: 50px auto 20px auto;
+    animation: fadeIn 2s;
+}
+
+#contact-header h1{
+    font-size: clamp(1.2rem, 10vw, 3rem);
+    font-weight: bolder;
+}
+
+#contact-header h3{
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-style: oblique;
+    margin-top: -10px;
+}
+
 .contact-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 3s;
 }
 
 .contact-wrapper form{
@@ -289,11 +286,14 @@ form button:hover, .form button:hover{
     background-color: rgba(51, 51, 51, 0.3);
     padding: 20px;
     border-radius: 20px;
+    justify-content: center;
 }
 
 form label{
     font-size: 1.2rem;
     text-align: left;
+    padding: 0 10px 0 10px;
+    font-style: oblique;
 }
 
 form input, form textarea{
@@ -302,16 +302,41 @@ form input, form textarea{
     border-radius: 10px;
     border: none;
     outline: none;
+    width: 95%;
+    margin: 10px auto;
 }
 
-form input{
-    width: 100%;
+.child-container:hover{
+    transform: translateY(-6px);
+    box-shadow: 4px 8px 24px rgba(0,0,0,0.5);
 }
 
-.form button{
+.child-container img:hover{
+    transform: scale(1.03);
+    filter: saturate(1.05);
+}
+
+form button{
+    font-size: clamp(1rem, 3vw, 1rem);
     background-color: wheat;
     color: black;
     font-weight: bolder;
     cursor: pointer;
     width: 30%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 180ms ease, transform 160ms ease, box-shadow 160ms ease;
+    margin: 10px auto 0px auto;
+}
+
+form button:hover, .form button:hover{
+    background-color: #fff0c6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
