@@ -1,39 +1,9 @@
 #homepage, #menu, #about, #contact{
     font-family: 'Merriweather', serif;
-    background-image: url(img/beautiful-wedding-reception-hall-with-decorated-luxury-table-setting.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     overflow-x: hidden;
     color: wheat;
     width: 100%;
     height: auto;
-}
-
-#menu{
-    background-image: url(img/top-view-dining-tables-without-food.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#about{
-    background-image: url(img/fork-near-plate-with-twig.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#contact{
-    background-image: url(img/crop-plate-with-salad.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    src: url(fonts/Merriweather/Merriweather-Italic-VariableFont_opsz\,wdth\,wght.ttf);
 }
 
 .nav-container{
