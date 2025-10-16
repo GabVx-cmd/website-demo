@@ -104,6 +104,7 @@
     align-items: center;
     margin: 20px auto 50px auto ;
     animation: fadeIn 3s;
+    border-bottom: 1px solid white;
 }
 
 .overlay section{
