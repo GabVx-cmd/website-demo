@@ -297,12 +297,12 @@ form input, form textarea{
 }
 
 form button{
-    font-size: clamp(1rem, 3vw, 1rem);
+    font-size: clamp(0.8rem, 3vw, 1rem);
     background-color: wheat;
     color: black;
     font-weight: bolder;
     cursor: pointer;
-    width: 30%;
+    width: 40%;
     padding: 10px 14px;
     border-radius: 8px;
     border: none;
