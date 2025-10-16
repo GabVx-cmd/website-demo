@@ -143,7 +143,7 @@
 #menu-header{
     text-align: center;
     margin: 10px auto 20px auto;
-    font-size: clamp(1rem, 10vw, 3rem);
+    font-size: clamp(1.2rem, 10vw, 2rem);
     font-weight: bolder;
     animation: fadeIn 2s;
 }
@@ -208,7 +208,7 @@
     margin: 0px auto 20px auto;
     border-bottom: 1px solid white;
     width: 60%;
-    font-size: clamp(1rem, 10vw, 3rem);
+    font-size: clamp(1.2rem, 10vw, 2em);
     font-weight: bolder;
     position: relative;
     top: -20px;
