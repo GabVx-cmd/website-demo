@@ -1,7 +1,7 @@
 #homepage, #menu, #about, #contact{
     font-family: 'Merriweather', serif;
     overflow-x: hidden;
-    color: wheat;
+    color:#F5DEB3;
     width: 100%;
     height: auto;
 }
@@ -55,8 +55,8 @@
 
 .header-container{
     width: 100%;
-    margin: 100px auto 20px auto;
-    height: 30vh;
+    margin: 50px auto 0 auto;
+    height: auto;
     animation: fadeIn 2s;
 }
 
@@ -78,6 +78,10 @@
 
 .highlight{
     color: yellow;
+}
+
+.highlight-white{
+    color: white;
 }
 
 .header-container a{
@@ -102,7 +106,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 20px auto 20px auto ;
+    margin: 0px auto 20px auto ;
     animation: fadeIn 3s;
     border-bottom: 1px solid white;
     padding: 10px;
@@ -113,18 +117,20 @@
     text-align: center;
     margin: auto;
     width: 60%;
+    color: white;
 }
 
 .overlay h2{
-    font-size: 2rem;
-    margin-bottom: -10px;
+    font-size: 3rem;
+    padding-bottom: 10px;
 }
 
-.overlay p{
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-style: oblique;
-    font-weight: bolder;
+.op-day{
+    font-size: clamp(1rem, 5vw, 1.8rem);
+}
+
+.op-time{
+    font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
 .desc p{
@@ -132,6 +138,15 @@
     font-style: oblique;
     margin-top: 10px;
     animation: fadeIn 4s;
+    color: #F5DEB3;
+}
+
+#heartland{
+    font-weight: bolder;
+}
+
+.opening-time{
+    margin-top: -30px;
 }
 
 .address p{
